@@ -31,7 +31,8 @@ def predict_charges(age, sex, bmi, smoker, region, children):
 st.title("Health Insurance Claim Predictor 💰") 
 st.write("Predict medical insurance cost based on health & lifesytle factors.")
 
-#sidebar for user input 
+
+#sidebar
 st.sidebar.header("Enter The Details") 
 age = st.sidebar.slider("Age",18,100,30)
 sex = st.sidebar.selectbox("Sex",["Male","Female"]) 
