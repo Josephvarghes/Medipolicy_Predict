@@ -41,7 +41,8 @@ smoker = st.sidebar.radio("Smoker?",["yes","No"])
 region =st.sidebar.selectbox("Region",["northeast", "northwest", "southeast", "southwest"])
 children = st.sidebar.slider("No. of Children",0,5,1) 
 
-#predict button 
+
+#predict button
 if st.sidebar.button("Predict Claim"): 
     predicted_cost = predict_charges(age, sex, bmi, smoker, region,  children) 
     # Display the predicted cost
