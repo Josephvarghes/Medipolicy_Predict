@@ -27,7 +27,8 @@ def predict_charges(age, sex, bmi, smoker, region, children):
     predict_charges = model.predict(input_data)[0] 
     return round(predict_charges,2) 
 
-#streamlit UI 
+
+#UI part
 st.title("Health Insurance Claim Predictor 💰") 
 st.write("Predict medical insurance cost based on health & lifesytle factors.")
 
