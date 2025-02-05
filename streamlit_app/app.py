@@ -5,7 +5,8 @@ import joblib
 import seaborn as sns 
 import matplotlib.pyplot as plt 
 
-#load the best model 
+
+#load the model
 with open("../model/best_model3.pkl", "rb") as model_file: 
     model= joblib.load(model_file)  
 
