@@ -24,7 +24,7 @@ def predict_charges(age, sex, bmi, smoker, region, children):
     # Reshape the data to a 2D array
     input_data = np.array(input_data).reshape(1, -1)
 
-    #predict charges 
+
     predict_charges = model.predict(input_data)[0] 
     return round(predict_charges,2) 
 
