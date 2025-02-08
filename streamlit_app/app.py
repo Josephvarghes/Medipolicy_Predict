@@ -21,7 +21,8 @@ def predict_charges(age, sex, bmi, smoker, region, children):
     #create input array 
     input_data = np.array([age, sex_encoded, bmi, children,smoker_encoded,region_encoded])  
 
-    # Reshape 
+    
+    #reshape
     input_data = np.array(input_data).reshape(1, -1)
 
 
