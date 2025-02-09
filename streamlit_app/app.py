@@ -10,7 +10,8 @@ import matplotlib.pyplot as plt
 with open("../model/best_model3.pkl", "rb") as model_file: 
     model= joblib.load(model_file)  
 
-#Function to predict insurance charges 
+
+#function for prediction
 def predict_charges(age, sex, bmi, smoker, region, children): 
     #Encode the categorical varivable 
     sex_encoded = 1 if sex == "Male" else 0 
