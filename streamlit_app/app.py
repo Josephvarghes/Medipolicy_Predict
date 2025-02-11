@@ -11,7 +11,7 @@ with open("../model/best_model3.pkl", "rb") as model_file:
     model= joblib.load(model_file)  
 
 
-#function for prediction
+#function for predictionss
 def predict_charges(age, sex, bmi, smoker, region, children): 
     #Encode the categorical varivable 
     sex_encoded = 1 if sex == "Male" else 0 
@@ -35,8 +35,7 @@ def predict_charges(age, sex, bmi, smoker, region, children):
 st.title("Health Insurance Claim Predictor 💰") 
 st.write("Predict medical insurance cost based on health & lifesytle factors.")
 
-
-#sidebar
+#side bar ui
 st.sidebar.header("Enter The Details") 
 age = st.sidebar.slider("Age",18,100,30)
 sex = st.sidebar.selectbox("Sex",["Male","Female"]) 
